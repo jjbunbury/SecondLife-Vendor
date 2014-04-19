@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install type="component" version="1.5.0">
+	<name>SlVendor</name>
+	<creationDate>2008 10 04</creationDate>
+	<author>Wene / ssm2017 Binder</author>
+	<authorEmail>wene.dev@gmail.com</authorEmail>
+	<authorUrl>http://joomlacode.org/gf/project/slvendor/</authorUrl>
+	<copyright>(C) 2008-2009 Wene (S.Massiaux). All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<version>1.5.67</version>
+	<description>This component is used to sell orbjects, and-or, manage products updates in secondlife</description>
+	<files folder="site">
+		<filename>controller.php</filename>
+		<filename>controllers/inworld.php</filename>
+		<filename>helpers/lslrpc.inc</filename>
+		<filename>helpers/route.php</filename>
+		<filename>helpers/slvendor.js</filename>
+		<filename>metadata.xml</filename>
+		<filename>models/categories.php</filename>
+		<filename>models/category.php</filename>
+		<filename>models/product.php</filename>
+		<filename>models/products.php</filename>
+		<filename>models/server.php</filename>
+		<filename>router.php</filename>
+		<filename>slvendor.php</filename>
+		<filename>views/categories/metadata.xml</filename>
+		<filename>views/categories/tmpl/default.php</filename>
+		<filename>views/categories/tmpl/default.xml</filename>
+		<filename>views/categories/view.html.php</filename>
+		<filename>views/category/metadata.xml</filename>
+		<filename>views/category/tmpl/default.php</filename>
+		<filename>views/category/tmpl/default.xml</filename>
+		<filename>views/category/tmpl/default_items.php</filename>
+		<filename>views/category/view.html.php</filename>
+		<filename>views/inworld/metadata.xml</filename>
+		<filename>views/inworld/tmpl/default.php</filename>
+		<filename>views/inworld/tmpl/default.xml</filename>
+		<filename>views/inworld/view.raw.php</filename>
+		<filename>views/product/tmpl/default.php</filename>
+		<filename>views/product/tmpl/default.xml</filename>
+		<filename>views/product/view.html.php</filename>
+	</files>
+	<install>
+		<sql>
+			<file charset="utf8" driver="mysql">install.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file charset="utf8" driver="mysql">uninstall.sql</file>
+		</sql>
+	</uninstall>
+	<languages folder="site">
+		<language tag="en-GB">en-GB.com_slvendor.ini</language>
+	</languages>
+	<administration>
+		<menu link="option=com_slvendor&amp;view=products">SLVendor</menu>
+		<submenu>
+			<menu link="option=com_slvendor&amp;view=products">Products</menu>
+			<menu link="option=com_categories&amp;section=com_slvendor">Categories</menu>
+			<menu link="option=com_slvendor&amp;view=servers">Servers</menu>
+		</submenu>
+		<files folder="admin">
+			<filename>admin.slvendor.php</filename>
+			<filename>config.xml</filename>
+			<filename>controller.php</filename>
+			<filename>controllers/products.php</filename>
+			<filename>controllers/servers.php</filename>
+			<filename>elements/product.php</filename>
+			<filename>install.sql</filename>
+			<filename>models/product.php</filename>
+			<filename>models/product.xml</filename>
+			<filename>models/products.php</filename>
+			<filename>models/server.php</filename>
+			<filename>models/servers.php</filename>
+			<filename>tables/product.php</filename>
+			<filename>tables/server.php</filename>
+			<filename>uninstall.sql</filename>
+			<filename>views/product/tmpl/form.php</filename>
+			<filename>views/product/view.html.php</filename>
+			<filename>views/products/tmpl/default.php</filename>
+			<filename>views/products/view.html.php</filename>
+			<filename>views/server/tmpl/form.php</filename>
+			<filename>views/server/view.html.php</filename>
+			<filename>views/servers/tmpl/default.php</filename>
+			<filename>views/servers/view.html.php</filename>
+			<filename>views/slvendor/tmpl/default.php</filename>
+			<filename>views/slvendor/view.html.php</filename>
+		</files>
+		<languages folder="admin">
+			<language tag="en-GB">en-GB.com_slvendor.ini</language>
+			<language tag="en-GB">en-GB.com_slvendor.menu.ini</language>
+		</languages>
+	</administration>
+</install>

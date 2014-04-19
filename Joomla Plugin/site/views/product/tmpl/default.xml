@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Single Product Layout">
+		<message>
+			<![CDATA[This layout shows a single product.]]>
+		</message>
+	</layout>
+	<state>
+		<name>Product Layout</name>
+		<description>This layout shows a single product.</description>
+		<url addpath="/administrator/components/com_slvendor/elements">
+			<param name="id" type="product" default="" label="Select Product" description="The product to link to" />
+		</url>
+		<params>
+		</params>
+	</state>
+</metadata>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="PRODUCT CATEGORY LIST LAYOUT">
+		<message>
+			<![CDATA[PRODUCT CATEGORY LIST LAYOUT DESC]]>
+		</message>
+	</layout>
+	<state>
+		<name>PRODUCT CATEGORY LIST LAYOUT</name>
+		<description>PRODUCT CATEGORY LIST LAYOUT DESC</description>
+		<params>
+			<param type="spacer" default="&lt;b&gt;Image&lt;/b&gt;" />
+			<param name="image" type="imagelist" directory="/images/stories" hide_default="1" default="" label="Image" description="PARAMIMAGE" />
+			<param name="image_align" type="radio" default="left" label="Image Align" description="Alignment of the image">
+				<option value="left">Left</option>
+				<option value="right">Right</option>
+			</param>
+			<param type="spacer" default="&lt;b&gt;Description&lt;/b&gt;" />
+			<param name="show_intro_text" type="radio" default="1" label="Show Intro Text" description="Shows the intro text">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>
+			<param name="intro_text" type="textarea" default="Choose a category to display products" label="Intro Text" rows="3" cols="50" description="" />
+			<param type="spacer" default="&lt;b&gt;Others&lt;/b&gt;" />
+			<param name="show_products_qty" type="radio" default="1" label="Show Products Quantity" description="Shows the products quantity">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>
+		</params>
+	</state>
+</metadata>

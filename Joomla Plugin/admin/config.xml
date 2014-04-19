@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<params>
+        <!-- sl parameters -->
+		<param type="spacer" />
+		<param type="spacer" default="&lt;div style=&quot;background-color:#F6F6F6;;color:#666666;font-weight:bold;&quot;&gt;&lt;b&gt;SL Parameters&lt;/b&gt;&lt;/div&gt;" />
+		<param type="spacer" />
+		<param name="password" type="text" size="40" default="" label="Password" description="Enter the password" />
+		<param name="separator" type="text" size="2" default="-" label="Version Separator" description="Enter the version separator" />
+		<param name="notecard_suffix" type="text" size="10" default=".info" label="Notecard suffix" description="Enter a name or extension to use for the notecard." />
+		<!-- network parameters -->
+		<param type="spacer" />
+		<param type="spacer" default="&lt;div style=&quot;background-color:#F6F6F6;;color:#666666;font-weight:bold;&quot;&gt;&lt;b&gt;Network Parameters&lt;/b&gt;&lt;/div&gt;" />
+		<param type="spacer" />
+		<param name="use_proxy" type="radio" default="0" label="Use proxy" description="Select if you are using a proxy behind your web server to use HTTP_X_FORWARDED_FOR instead of REMOTE_ADDR.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+        <param name="allowed_ips" type="text" size="128" default="8.2.32.0/22,63.210.156.0/22,64.129.40.0/22,64.129.44.0/22,64.154.220.0/22,8.4.128.0/22,8.10.144.0/21,216.82.0.0/18" label="Allowed IPs" description="Enter the allowed ips to comunicate with the vendor. If you dont know what it is, leave this as default" />
+        <!-- logs parameters -->
+		<param type="spacer" />
+		<param type="spacer" default="&lt;div style=&quot;background-color:#F6F6F6;;color:#666666;font-weight:bold;&quot;&gt;&lt;b&gt;Logs Parameters&lt;/b&gt;&lt;/div&gt;" />
+		<param type="spacer" />
+		<param name="use_log_file" type="radio" default="1" label="Use log file" description="Select if you want to use a log file or not.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="logfilename" type="text" size="40" default="slvendor-log.csv" label="Log File Name" description="Enter the log file name" />
+		<param name="logseparator" type="text" size="2" default="," label="Log Separator" description="Enter the separator for log fields" />
+        <!-- front end category display parameters -->
+		<param type="spacer" />
+		<param type="spacer" default="&lt;div style=&quot;background-color:#F6F6F6;;color:#666666;font-weight:bold;&quot;&gt;&lt;b&gt;Frontend Category Display Parameters&lt;/b&gt;&lt;/div&gt;" />
+		<param type="spacer" />
+		<param name="default_cat_name" type="text" size="40" default="default" label="Default category name" description="Enter a category name to use when registering new contact" />
+		<param type="spacer" default="&lt;b&gt;Description&lt;/b&gt;" />
+			<param name="show_cat_title" type="radio" default="1" label="Show Category Title" description="Shows the category title">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>
+			<param name="show_cat_desc" type="radio" default="1" label="Show Category Description" description="Shows the category description">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>
+			<param type="spacer" default="&lt;b&gt;Values&lt;/b&gt;" />
+			<param name="show_icon" type="radio" default="1" label="Show Icon" description="Shows icon">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>
+			<param name="icon_type" type="list" default="texture" label="Icon Type" description="Icon type">
+				<option value="icon">icon</option>
+				<option value="texture">texture</option>
+				<option value="image">image</option>
+			</param>
+			<param name="icon_size" type="text" default="32" label="Icon max size" description="Icon max size" size="3" />
+			<param name="icon_icon" type="imagelist" directory="/images/M_images" default="" label="Icon" description="PARAMICONIMG" />
+			<param name="icon_image" type="imagelist" directory="/images/stories" hide_default="1" default="" label="Image" description="PARAMIMAGE" />
+			<param name="show_price" type="radio" default="1" label="Show Price" description="Shows price">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>
+			<param name="show_link_hits" type="radio" default="1" label="Show Hits" description="Shows hits">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>
+	</params>
+</config>

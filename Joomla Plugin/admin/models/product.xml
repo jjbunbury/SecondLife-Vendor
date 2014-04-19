@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<model>
+	<params>
+		<param type="spacer" default="&lt;div style=&quot;background-color:#F6F6F6;;color:#666666;font-weight:bold;&quot;&gt;&lt;b&gt;Permissions&lt;/b&gt;&lt;/div&gt;" />
+		<param name="perms" type="list" default="0" label="Permissions" description="Select a permission for your object">
+			<option value="0">Copy / Modify / Transfer</option>
+			<option value="1">No Transfer</option>
+			<option value="2">No Modify</option>
+			<option value="3">No Copy</option>
+			<option value="4">No Modify / No Transfer</option>
+			<option value="5">No Copy / No Transfer</option>
+			<option value="6">No Copy / No Modify</option>
+			<option value="7">No Copy / No Modify / No Transfer</option>
+		</param>
+		<param type="spacer" default="&lt;div style=&quot;background-color:#F6F6F6;;color:#666666;font-weight:bold;&quot;&gt;&lt;b&gt;Icon&lt;/b&gt;&lt;/div&gt;" />
+		<param name="icon_type" type="list" default="texture" label="Icon Type" description="Icon type">
+			<option value="icon">icon</option>
+			<option value="texture">texture</option>
+			<option value="image">image</option>
+		</param>
+		<param name="icon_size" type="text" default="32" label="Icon max size" description="Icon max size" size="3" />
+		<param name="icon_icon" type="imagelist" directory="/images/M_images" default="" label="Icon" description="PARAMICONIMG" />
+		<param name="icon_image" type="imagelist" directory="/images/stories" hide_default="1" default="" label="Image" description="PARAMIMAGE" />
+	</params>
+</model>
